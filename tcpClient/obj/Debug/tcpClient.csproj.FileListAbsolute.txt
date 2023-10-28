@@ -1,0 +1,10 @@
+C:\Users\user\RiderProjects\tcpClient\tcpClient\bin\Debug\tcpClient.exe.config
+C:\Users\user\RiderProjects\tcpClient\tcpClient\bin\Debug\tcpClient.exe
+C:\Users\user\RiderProjects\tcpClient\tcpClient\bin\Debug\tcpClient.pdb
+C:\Users\user\RiderProjects\tcpClient\tcpClient\obj\Debug\tcpClient.csproj.AssemblyReference.cache
+C:\Users\user\RiderProjects\tcpClient\tcpClient\obj\Debug\tcpClient.Properties.Resources.resources
+C:\Users\user\RiderProjects\tcpClient\tcpClient\obj\Debug\tcpClient.csproj.GenerateResource.cache
+C:\Users\user\RiderProjects\tcpClient\tcpClient\obj\Debug\tcpClient.csproj.CoreCompileInputs.cache
+C:\Users\user\RiderProjects\tcpClient\tcpClient\obj\Debug\tcpClient.exe
+C:\Users\user\RiderProjects\tcpClient\tcpClient\obj\Debug\tcpClient.pdb
+C:\Users\user\RiderProjects\tcpClient\tcpClient\obj\Debug\tcpClient.Form1.resources
