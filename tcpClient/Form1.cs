@@ -1,25 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace tcpClient
 {
     public partial class Form1 : Form
     {
-        private IPEndPoint tcpEndPoint;
-        private int _localPort = 0;
-        private int _remotePort = 0;
-        private string ip = "127.0.0.1";
-        private Socket tcpSocket;
+        private IPEndPoint _tcpEndPoint;
+        private int _localPort;
+        private int _remotePort ;
+        private string _ip;
+        private Socket _tcpSocket;
+        private Thread _thread;
         public Form1()
         {
             InitializeComponent();
@@ -29,8 +24,8 @@ namespace tcpClient
         {
             try
             {
-                Thread thread = new Thread(new ThreadStart(Listener));
-                thread.Start();
+                _thread = new Thread(new ThreadStart(Listener));
+                _thread.Start();
                 
             }
             catch (Exception exception)
@@ -42,23 +37,24 @@ namespace tcpClient
         private void CloseButton_Click(object sender, EventArgs e)
         {
             
+            _tcpSocket?.Close();
+            if (_thread.IsAlive) 
+                _thread.Abort();
         }
 
-        void Listener()
+        private void Listener()
         {
-            tcpEndPoint = new IPEndPoint(IPAddress.Parse(ip), _localPort);
-            tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            tcpSocket.Bind(tcpEndPoint);
-            tcpSocket.Listen(3);
+            _tcpEndPoint = new IPEndPoint(IPAddress.Parse(_ip), _localPort);
+            _tcpSocket = new Socket(_tcpEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            _tcpSocket.Bind(_tcpEndPoint);
+            _tcpSocket.Listen(10);
 
             for (;;)
             {
-                Socket listener = tcpSocket.Accept();
+                Socket listener = _tcpSocket.Accept();
                 byte[] data = new byte[256];
-                int size = 0;
+                int size;
                 
-                
-
                 do
                 {
                     size = listener.Receive(data);
@@ -75,8 +71,8 @@ namespace tcpClient
 
         private void SendButton_Click(object sender, EventArgs e)
         {
-            IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Parse(ip), _remotePort);
-            Socket remoteTcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Parse(_ip), _remotePort);
+            Socket remoteTcpSocket = new Socket(remoteEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             remoteTcpSocket.Bind(remoteEndPoint);
             if (textBox1.Text != "")
             {
@@ -90,12 +86,31 @@ namespace tcpClient
 
         private void LocalPort_TextChanged(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            _localPort = int.Parse(LocalPort.Text);
         }
 
         private void RemotePort_TextChanged(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            _remotePort = int.Parse(RemotePort.Text);
+        }
+
+
+        private void ipTextBox_TextChanged(object sender, EventArgs e)
+        {
+            _ip = ipTextBox.Text;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            _ip = "127.0.0.1";
+            ipTextBox.Text = _ip;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            _tcpSocket?.Close();
+            if (_thread.IsAlive) 
+                _thread.Abort();
         }
     }
 }

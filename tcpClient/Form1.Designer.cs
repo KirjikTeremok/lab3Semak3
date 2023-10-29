@@ -36,6 +36,8 @@
             this.CloseButton = new System.Windows.Forms.Button();
             this.LocalPort = new System.Windows.Forms.TextBox();
             this.RemotePort = new System.Windows.Forms.TextBox();
+            this.ipTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -99,11 +101,29 @@
             this.RemotePort.TabIndex = 6;
             this.RemotePort.TextChanged += new System.EventHandler(this.RemotePort_TextChanged);
             // 
+            // ipTextBox
+            // 
+            this.ipTextBox.Location = new System.Drawing.Point(360, 416);
+            this.ipTextBox.Name = "ipTextBox";
+            this.ipTextBox.Size = new System.Drawing.Size(208, 22);
+            this.ipTextBox.TabIndex = 7;
+            this.ipTextBox.TextChanged += new System.EventHandler(this.ipTextBox_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(332, 424);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(28, 25);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Ip";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ipTextBox);
             this.Controls.Add(this.RemotePort);
             this.Controls.Add(this.LocalPort);
             this.Controls.Add(this.CloseButton);
@@ -113,9 +133,14 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.TextBox ipTextBox;
+        private System.Windows.Forms.Label label1;
 
         private System.Windows.Forms.TextBox LocalPort;
         private System.Windows.Forms.TextBox RemotePort;
