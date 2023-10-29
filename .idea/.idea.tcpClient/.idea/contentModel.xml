@@ -23,6 +23,23 @@
         <e p="tcpClient.csproj" t="IncludeRecursive" />
       </e>
       <e p="tcpClient.sln" t="IncludeFlat" />
+      <e p="telnetServer" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="telnetServer.csproj" t="IncludeRecursive" />
+      </e>
     </e>
   </component>
 </project>

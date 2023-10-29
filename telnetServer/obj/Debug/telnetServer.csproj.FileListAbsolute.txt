@@ -1,0 +1,9 @@
+C:\Users\user\RiderProjects\tcpClient\telnetServer\bin\Debug\telnetServer.exe.config
+C:\Users\user\RiderProjects\tcpClient\telnetServer\bin\Debug\telnetServer.exe
+C:\Users\user\RiderProjects\tcpClient\telnetServer\bin\Debug\telnetServer.pdb
+C:\Users\user\RiderProjects\tcpClient\telnetServer\obj\Debug\telnetServer.csproj.AssemblyReference.cache
+C:\Users\user\RiderProjects\tcpClient\telnetServer\obj\Debug\telnetServer.Properties.Resources.resources
+C:\Users\user\RiderProjects\tcpClient\telnetServer\obj\Debug\telnetServer.csproj.GenerateResource.cache
+C:\Users\user\RiderProjects\tcpClient\telnetServer\obj\Debug\telnetServer.csproj.CoreCompileInputs.cache
+C:\Users\user\RiderProjects\tcpClient\telnetServer\obj\Debug\telnetServer.exe
+C:\Users\user\RiderProjects\tcpClient\telnetServer\obj\Debug\telnetServer.pdb
