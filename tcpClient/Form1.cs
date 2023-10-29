@@ -73,13 +73,8 @@ namespace tcpClient
         {
             IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Parse(_ip), _remotePort);
             Socket remoteTcpSocket = new Socket(remoteEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-            remoteTcpSocket.Bind(remoteEndPoint);
-            if (textBox1.Text != "")
-            {
-                remoteTcpSocket.Connect(remoteEndPoint);
-                remoteTcpSocket.Send(Encoding.UTF8.GetBytes(textBox1.Text));
-            }
-            
+            remoteTcpSocket.Connect(remoteEndPoint); 
+            remoteTcpSocket.Send(Encoding.UTF8.GetBytes(textBox1.Text));
             remoteTcpSocket.Shutdown(SocketShutdown.Both);
             remoteTcpSocket.Close();
         }
