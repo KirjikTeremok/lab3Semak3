@@ -6,9 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fe6ef98-9658-4ccc-982e-343a3c67fdd1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.tcpClient/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tcpClient/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tcpClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tcpClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcpClient.sln" beforeDir="false" afterPath="$PROJECT_DIR$/tcpClient.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +31,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/956ABBF9-4F18-4921-9418-742CD2E198A3/36/ac6e8c33/NativeWindow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/956ABBF9-4F18-4921-9418-742CD2E198A3/b0/778a7416/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/956ABBF9-4F18-4921-9418-742CD2E198A3/5c/31957c5e/Control.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/485DB82A-61B1-468B-BC9D-4475AB6B2B84/2b/0a6d76d6/Graphics.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tcpClient/Form1.Designer.cs" />
         <option value="$PROJECT_DIR$/tcpClient/Form1.cs" />
+        <option value="$PROJECT_DIR$/telnetServer/Form1.Designer.cs" />
         <option value="$PROJECT_DIR$/telnetServer/Form1.cs" />
       </list>
     </option>
@@ -102,6 +110,8 @@
       <workItem from="1698529864503" duration="2254000" />
       <workItem from="1698581461864" duration="124000" />
       <workItem from="1698584578158" duration="3392000" />
+      <workItem from="1698751135845" duration="1306000" />
+      <workItem from="1698759775057" duration="3478000" />
     </task>
     <servers />
   </component>
