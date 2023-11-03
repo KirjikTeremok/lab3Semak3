@@ -36,6 +36,8 @@
             this.testCommandTextBox = new System.Windows.Forms.TextBox();
             this.testButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
+            this.telnetServerBox = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,11 +104,31 @@
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
+            // telnetServerBox
+            // 
+            this.telnetServerBox.Location = new System.Drawing.Point(496, 78);
+            this.telnetServerBox.Name = "telnetServerBox";
+            this.telnetServerBox.Size = new System.Drawing.Size(25, 11);
+            this.telnetServerBox.TabIndex = 7;
+            this.telnetServerBox.Text = "checkBox1";
+            this.telnetServerBox.UseVisualStyleBackColor = true;
+            this.telnetServerBox.CheckedChanged += new System.EventHandler(this.telnetServerBox_CheckedChanged);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(337, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 23);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "врубить telnet сервер";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.telnetServerBox);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.testButton);
             this.Controls.Add(this.testCommandTextBox);
@@ -116,12 +138,15 @@
             this.Controls.Add(this.RemotePort);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox telnetServerBox;
 
         private System.Windows.Forms.Button clearButton;
 

@@ -4,16 +4,26 @@
     <projectFile>tcpClient/tcpClient.csproj</projectFile>
     <projectFile>telnetServer/telnetServer.csproj</projectFile>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe6ef98-9658-4ccc-982e-343a3c67fdd1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.tcpClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tcpClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telnetServer/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telnetServer/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="1fe6ef98-9658-4ccc-982e-343a3c67fdd1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +123,7 @@
       <workItem from="1698775179824" duration="904000" />
       <workItem from="1698951747579" duration="1918000" />
       <workItem from="1698995941724" duration="3724000" />
-      <workItem from="1699019342752" duration="625000" />
+      <workItem from="1699019342752" duration="1447000" />
     </task>
     <servers />
   </component>
@@ -122,6 +132,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -222,6 +243,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="152" y="124" width="1200" height="624" key="VCS.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1698957776576" />
+    <state x="345" y="169" key="Vcs.Push.Dialog.v2" timestamp="1699020594474">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="345" y="169" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1699020594474" />
     <state x="409" y="201" key="run.anything.popup" timestamp="1698769567716">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

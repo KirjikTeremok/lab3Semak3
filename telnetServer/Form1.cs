@@ -147,5 +147,10 @@ namespace telnetServer
             tcpSocket?.Close();
             _thread?.Abort();
         }
+
+        private void telnetServerBox_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
