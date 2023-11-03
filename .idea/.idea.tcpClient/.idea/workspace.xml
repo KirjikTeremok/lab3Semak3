@@ -11,8 +11,6 @@
       <change beforePath="$PROJECT_DIR$/telnetServer/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/Form1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.csproj.GenerateResource.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.pdb" afterDir="false" />
     </list>
@@ -111,7 +109,11 @@
       <workItem from="1698581461864" duration="124000" />
       <workItem from="1698584578158" duration="3392000" />
       <workItem from="1698751135845" duration="1306000" />
-      <workItem from="1698759775057" duration="3478000" />
+      <workItem from="1698759775057" duration="4358000" />
+      <workItem from="1698775179824" duration="904000" />
+      <workItem from="1698951747579" duration="1918000" />
+      <workItem from="1698995941724" duration="3724000" />
+      <workItem from="1699019342752" duration="625000" />
     </task>
     <servers />
   </component>
@@ -216,9 +218,13 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="399" y="91" key="ToolboxManager/0.0.1536.864@0.0.1536.864" timestamp="1698589883324" />
-    <state x="409" y="201" key="run.anything.popup" timestamp="1698248304966">
+    <state x="152" y="124" width="1200" height="624" key="VCS.FileHistoryDialog" timestamp="1698957776576">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="409" y="201" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1698248304966" />
+    <state x="152" y="124" width="1200" height="624" key="VCS.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1698957776576" />
+    <state x="409" y="201" key="run.anything.popup" timestamp="1698769567716">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="409" y="201" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1698769567716" />
   </component>
 </project>

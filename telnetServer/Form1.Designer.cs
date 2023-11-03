@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.testCommandTextBox = new System.Windows.Forms.TextBox();
             this.testButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,11 +92,22 @@
             this.testButton.UseVisualStyleBackColor = true;
             this.testButton.Click += new System.EventHandler(this.testButton_Click);
             // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(705, 169);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(83, 34);
+            this.clearButton.TabIndex = 6;
+            this.clearButton.Text = "очистить";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.testButton);
             this.Controls.Add(this.testCommandTextBox);
             this.Controls.Add(this.pictureBox1);
@@ -105,10 +117,13 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Button clearButton;
 
         private System.Windows.Forms.TextBox testCommandTextBox;
 
