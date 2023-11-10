@@ -23,7 +23,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fe6ef98-9658-4ccc-982e-343a3c67fdd1" name="Default Changelist" comment="" />
+    <list default="true" id="1fe6ef98-9658-4ccc-982e-343a3c67fdd1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.tcpClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tcpClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcpClient/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tcpClient/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcpClient/bin/Debug/tcpClient.exe" beforeDir="false" afterPath="$PROJECT_DIR$/tcpClient/bin/Debug/tcpClient.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcpClient/bin/Debug/tcpClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/tcpClient/bin/Debug/tcpClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcpClient/obj/Debug/tcpClient.exe" beforeDir="false" afterPath="$PROJECT_DIR$/tcpClient/obj/Debug/tcpClient.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcpClient/obj/Debug/tcpClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/tcpClient/obj/Debug/tcpClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/bin/Debug/telnetServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/telnetServer/obj/Debug/telnetServer.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +51,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/377D90B6-A602-46C8-B0FC-F7D6E7B8F936/21/bd5aac8b/Number.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/956ABBF9-4F18-4921-9418-742CD2E198A3/36/ac6e8c33/NativeWindow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/956ABBF9-4F18-4921-9418-742CD2E198A3/b0/778a7416/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/109BEB49-8E93-4204-BE8A-5A52F9001EAF/2f/14f2b170/TcpClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/956ABBF9-4F18-4921-9418-742CD2E198A3/5c/31957c5e/Control.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/485DB82A-61B1-468B-BC9D-4475AB6B2B84/2b/0a6d76d6/Graphics.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -45,9 +59,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tcpClient/Form1.Designer.cs" />
-        <option value="$PROJECT_DIR$/tcpClient/Form1.cs" />
         <option value="$PROJECT_DIR$/telnetServer/Form1.Designer.cs" />
         <option value="$PROJECT_DIR$/telnetServer/Form1.cs" />
+        <option value="$PROJECT_DIR$/tcpClient/Form1.cs" />
       </list>
     </option>
   </component>
@@ -123,7 +137,10 @@
       <workItem from="1698775179824" duration="904000" />
       <workItem from="1698951747579" duration="1918000" />
       <workItem from="1698995941724" duration="3724000" />
-      <workItem from="1699019342752" duration="1447000" />
+      <workItem from="1699019342752" duration="4497000" />
+      <workItem from="1699095672546" duration="1961000" />
+      <workItem from="1699553355468" duration="2226000" />
+      <workItem from="1699610935264" duration="7729000" />
     </task>
     <servers />
   </component>
@@ -142,6 +159,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -151,22 +169,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="438" height="464" key="DebuggerActiveHint/0.0.1536.864@0.0.1536.864" timestamp="1698584725331" />
-    <state width="1493" height="199" key="GridCell.Tab.0.bottom" timestamp="1698585871098">
+    <state width="1342" height="126" key="GridCell.Tab.0.bottom" timestamp="1699048158201">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="199" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1698585871098" />
-    <state width="1493" height="199" key="GridCell.Tab.0.center" timestamp="1698585871098">
+    <state width="1342" height="126" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1699048158201" />
+    <state width="1342" height="126" key="GridCell.Tab.0.center" timestamp="1699048158201">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="199" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1698585871098" />
-    <state width="1493" height="199" key="GridCell.Tab.0.left" timestamp="1698585871097">
+    <state width="1342" height="126" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1699048158201" />
+    <state width="1342" height="126" key="GridCell.Tab.0.left" timestamp="1699048158201">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="199" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1698585871097" />
-    <state width="1493" height="199" key="GridCell.Tab.0.right" timestamp="1698585871098">
+    <state width="1342" height="126" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1699048158201" />
+    <state width="1342" height="126" key="GridCell.Tab.0.right" timestamp="1699048158201">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="199" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1698585871098" />
+    <state width="1342" height="126" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1699048158201" />
     <state width="1493" height="199" key="GridCell.Tab.1.bottom" timestamp="1698585871098">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

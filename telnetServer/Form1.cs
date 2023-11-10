@@ -12,27 +12,32 @@ namespace telnetServer
     {
         private string _ip = "127.0.0.1";
         private int _port;
+        private int _remotePort;
         private Thread _thread;
-        private Socket tcpSocket;
-        
+        private Thread _threadTelnet;
+        private Socket _tcpSocket;
+        private int _telnetServerLogic = 0;
+
         public Form1()
         {
             InitializeComponent();
         }
-        
+
         private void Form1_Load(object sender, EventArgs e)
-        { }
+        {
+            
+        }
         void Listener()
         {
             int answerBool;
             string reply;
             IPEndPoint tcpEndPoint = new IPEndPoint(IPAddress.Parse(_ip), _port);
-            tcpSocket = new Socket(tcpEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-            tcpSocket.Bind(tcpEndPoint);
-            tcpSocket.Listen(10);
+            _tcpSocket = new Socket(tcpEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            _tcpSocket.Bind(tcpEndPoint);
+            _tcpSocket.Listen(10);
             for (;;)
             {
-                Socket listener = tcpSocket.Accept();
+                Socket listener = _tcpSocket.Accept();
                 byte[] data = new byte[256];
                 int size;
                 do
@@ -46,10 +51,8 @@ namespace telnetServer
                 
                 else
                     reply = "Команда не распознана";
-                byte[] answer = Encoding.UTF8.GetBytes(reply);
-                listener.Send(answer);
-                listener.Shutdown(SocketShutdown.Both);
-                listener.Close();
+                SendMessage(reply); // отправка подтверждения
+                 
             }
         }
 
@@ -60,7 +63,7 @@ namespace telnetServer
 
         private void inputButton_Click(object sender, EventArgs e)
         {
-            if (RemotePort.Text != "")
+            if (RemotePort.Text != "" && _remotePort != 0)
             {
                 _thread = new Thread(new ThreadStart(Listener));
                 _thread.Start();
@@ -70,8 +73,8 @@ namespace telnetServer
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            
-            tcpSocket?.Close();
+            SendMessage("соединеие отключено");
+            _tcpSocket?.Close();
             // if (_thread.IsAlive)
             _thread?.Abort();    
 
@@ -130,7 +133,6 @@ namespace telnetServer
                     graphics.Clear(Color.WhiteSmoke);
                     break;
                 default:
-                    MessageBox.Show("команда не найдена");
                     answer = 0;
                     break;
             }
@@ -144,13 +146,42 @@ namespace telnetServer
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            tcpSocket?.Close();
+            _tcpSocket?.Close();
             _thread?.Abort();
         }
 
-        private void telnetServerBox_CheckedChanged(object sender, EventArgs e)
+        private void telnetServerBox_CheckedChanged(object sender, EventArgs e) //врубает telnet сервер
         {
-            
+            if (_telnetServerLogic == 0){
+                _threadTelnet = new Thread(new ThreadStart(TelnetServerFunc));
+                _threadTelnet.Start();
+                _telnetServerLogic = 1;
+            }
+            else
+            {
+                _threadTelnet.Abort();
+                _telnetServerLogic = 0;
+            }
+        }
+
+        void SendMessage(string message)
+        {
+            IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse(_ip), _remotePort); 
+            Socket remoteTcpSocket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            remoteTcpSocket.Connect(endPoint);
+            remoteTcpSocket.Send(Encoding.UTF8.GetBytes(message));
+            remoteTcpSocket.Shutdown(SocketShutdown.Both);
+            remoteTcpSocket.Close();
+        }
+
+        void TelnetServerFunc()
+        {
+
+        }
+
+        private void trueRemotePort_TextChanged(object sender, EventArgs e)
+        {
+            _remotePort = int.Parse(trueRemotePort.Text);
         }
     }
 }

@@ -104,8 +104,7 @@ namespace tcpClient
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             _tcpSocket?.Close();
-            if (_thread.IsAlive) 
-                _thread.Abort();
+            _thread?.Abort();
         }
     }
 }
