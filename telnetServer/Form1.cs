@@ -14,9 +14,9 @@ namespace telnetServer
         private int _port;
         private int _remotePort;
         private Thread _thread;
-        private Thread _threadTelnet;
         private Socket _tcpSocket;
-        private int _telnetServerLogic = 0;
+        private bool isCheckBox = false;
+        telnetClass _telnetClass = new telnetClass();
 
         public Form1()
         {
@@ -152,16 +152,18 @@ namespace telnetServer
 
         private void telnetServerBox_CheckedChanged(object sender, EventArgs e) //врубает telnet сервер
         {
-            if (_telnetServerLogic == 0){
-                _threadTelnet = new Thread(new ThreadStart(TelnetServerFunc));
-                _threadTelnet.Start();
-                _telnetServerLogic = 1;
+            if (isCheckBox == false)
+            {
+                isCheckBox = true;
+                _telnetClass.Start(_ip, 23000);
             }
             else
             {
-                _threadTelnet.Abort();
-                _telnetServerLogic = 0;
+                isCheckBox = false;
+                _telnetClass.Stop();
+                
             }
+            
         }
 
         void SendMessage(string message)
@@ -174,10 +176,7 @@ namespace telnetServer
             remoteTcpSocket.Close();
         }
 
-        void TelnetServerFunc()
-        {
-
-        }
+      
 
         private void trueRemotePort_TextChanged(object sender, EventArgs e)
         {

@@ -38,6 +38,7 @@
           <e p="Settings.Designer.cs" t="Include" />
           <e p="Settings.settings" t="Include" />
         </e>
+        <e p="telnetClass.cs" t="Include" />
         <e p="telnetServer.csproj" t="IncludeRecursive" />
       </e>
     </e>
